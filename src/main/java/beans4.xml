@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- Object is Created in Only one time -->
+	<bean id="mathpaper" class="com.bridgelabz.model.Math4"></bean>
+	<bean id="sciencepaper" class="com.bridgelabz.model.Science4"></bean>
+	<bean id="javapaper" class="com.bridgelabz.model.JavaPaper4"></bean>
+
+	<bean id="stud" class="com.bridgelabz.model.Student4">
+
+		<property name="Paper" ref="javapaper" />
+		<!--<property name="Paper" ref="sciencepaper" /> -->
+		<!-- <property name="Paper" ref="mathpaper" /> -->
+
+
+		<!-- <property name="sciencePaper" ref="sciencepaper" /> -->
+
+	</bean>
+</beans>  
