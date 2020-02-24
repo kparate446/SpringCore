@@ -7,8 +7,8 @@
 	<!-- <bean id = "heartObject" class="com.bridgelabz.autowiring.Heart"></bean> -->
 <!--1 <bean id = "heart" class="com.bridgelabz.autowiring.Heart"></bean>-->	
 <bean id = "heartObject" class="com.bridgelabz.autowiring.Heart"></bean>
-	<!-- <bean id = "human" class ="com.bridgelabz.autowiring.Human" autowire="byName"> -->
-	<bean id = "human" class ="com.bridgelabz.autowiring.Human" autowire="byType"> 
+	<!-- <bean id = "human" class ="com.bridgelabz.autowiring.Human" autowire="byName"//"byType"-->
+	<bean id = "human" class ="com.bridgelabz.autowiring.Human" autowire="constructor"> 
 	<!-- <property name="heart" ref="heartObject"></property> -->
 	</bean>
 	
