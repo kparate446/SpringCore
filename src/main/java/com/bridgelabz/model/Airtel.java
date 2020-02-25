@@ -1,4 +1,4 @@
-package com.bridgelabz.model;
+ package com.bridgelabz.model;
 
 import com.bridgelabz.service.Sim;
 

@@ -7,11 +7,11 @@
 	<!-- bean definitions here -->
 	<bean id="student" class="com.bridgelabz.model.Student1">
 		<property name="StudentName" value="Krunal Parate"></property>
-		<property name="id" value="7"></property>
+		<property name="id" value="1"></property>
 	</bean>
 
 	<bean id="ankit" class="com.bridgelabz.model.Student1">
 		<property name="StudentName" value="Ankit Rajput"></property>
-		<property name="id" value="8"></property>
+		<property name="id" value="2"></property>
 	</bean>
 </beans>       

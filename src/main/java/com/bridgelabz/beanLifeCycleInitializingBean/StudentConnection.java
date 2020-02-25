@@ -1,8 +1,7 @@
-package com.bridgelabz.beanLifeCycle;
+package com.bridgelabz.beanLifeCycleInitializingBean;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -52,10 +51,10 @@ public class StudentConnection {
 	}
 	// Connection of JDBC 
 	// Init it is a find EveryWhere
-	@PostConstruct 
+	/**@PostConstruct */
 	public void init() throws ClassNotFoundException, SQLException {
 		System.out.println("Init Method call");
-		createStudentDBConnection();
+		createStudentDBConnection(); 
 	}
 	
 //	@PostConstruct // Automatically connected
@@ -101,7 +100,7 @@ public class StudentConnection {
 		
 		con.close();
 	}
-	@PreDestroy
+	/**@PreDestroy*/
 	public void destroy() throws SQLException {
 		// Cleaning up the Container
 		System.out.println("Destroy method Calling");

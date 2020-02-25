@@ -1,5 +1,5 @@
 package com.bridgelabz.commonAnnotation;
-
+// Bean id --> used in main class  It is used without the @bean  
 //@Component("collegeBean")// <bean id = "collegeBean" class="com.bridgelabz.commonAnnotation.College"></bean> 
 public class College {
 	

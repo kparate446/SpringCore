@@ -4,12 +4,13 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
+// configure the bean file
 @ComponentScan(basePackages = "com.bridgelabz.commonAnnotation")
 public class CollegeConfig {
 	/**
-//	@Bean(name = {"ColBean","CollegeBean"} )
+//	@Bean(name = {"ColBean","CollegeBean"} ) // multiple values name are occur
 	@Bean
-	public College collegeBean() {
+	public College collegeBean() { // collegeBean()--> bean id
 		College college = new College();
 		return college;
 	}*/

@@ -1,4 +1,4 @@
-package com.bridgelabz.model;
+ package com.bridgelabz.model;
 
 public class Student1 {
 	private int id;

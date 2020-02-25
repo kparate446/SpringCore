@@ -1,4 +1,4 @@
-package com.bridgelabz.controller;
+ package com.bridgelabz.controller;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -11,7 +11,7 @@ public class Mobile {
 		/* Airtel airtel = new Airtel(); airtel.calling(); airtel.data();*/
 		/*Vodafone vodafone = new Vodafone(); vodafone.calling(); vodafone.data(); */
 		/* Sim sim = new Vodafone();// Airtel // Run time polymophism sim.calling();sim.data();*/
-		
+		  
 		ClassPathXmlApplicationContext  context = new ClassPathXmlApplicationContext("beans.xml");
 		System.out.println("Config Loaded");
 		// Only airtel Sim Loaded

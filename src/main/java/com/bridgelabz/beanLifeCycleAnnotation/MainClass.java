@@ -1,9 +1,10 @@
-package com.bridgelabz.beanLifeCycle;
+package com.bridgelabz.beanLifeCycleAnnotation;
 
 import java.sql.SQLException;
 import java.util.Scanner;
 
 import org.apache.catalina.core.ApplicationContext;
+import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class MainClass {
@@ -14,10 +15,17 @@ public class MainClass {
 ////	System.out.println("deleted the record");
 ////	int Sid = sc.nextInt();
 //	connection.deleteStudentRecord(3);
-		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("beans11.xml");
+		AbstractApplicationContext context = new ClassPathXmlApplicationContext("beans12.xml");
+		context.registerShutdownHook();
 		StudentConnection connection = context.getBean("studentConnection",StudentConnection.class);
 		connection.selectAllRows();
-		context.close();
+//		context.close();
+//		context.registerShutdownHook();
+		
+		/** After call the method 
+		 * 1)context.close() --> Exception is occur
+		 * 2) context.registerShutdownHook()--> working*/
+		Hello hello = context.getBean("hello",Hello.class);
 		
 }
 }

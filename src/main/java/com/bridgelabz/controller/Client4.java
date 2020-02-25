@@ -1,7 +1,5 @@
 package com.bridgelabz.controller;
 
-
-
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.bridgelabz.model.Student4;

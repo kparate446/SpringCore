@@ -9,7 +9,7 @@ public class Student3 {
 	public void setId(int id) {
 		this.id = id;
 	}
-
+	// Inside the Setter class inject the next setter method call
 	public void setMath(Math3 math) {
 		this.math = math;
 	}
