@@ -30,6 +30,7 @@ public class Mobile {
 //				Sim sim1 = context.getBean("sim",Sim.class);
 //				sim1.calling();
 //				sim1.data();
+		context.close();
 	}
 }
  

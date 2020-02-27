@@ -7,11 +7,11 @@
 	<!-- Object is Created in Only one time -->
 	<bean id="mathpaper" class="com.bridgelabz.model.Math4"></bean>
 	<bean id="sciencepaper" class="com.bridgelabz.model.Science4"></bean>
-	<bean id="javapaper" class="com.bridgelabz.model.JavaPaper4"></bean>
+	<bean id="javapaper" class="com.bridgelabz.model.JavaPaper4" ></bean>
 
 	<bean id="stud" class="com.bridgelabz.model.Student4">
 
-		<property name="Paper" ref="javapaper" />
+		<property name="Paper" ref="sciencepaper" />
 		<!--<property name="Paper" ref="sciencepaper" /> -->
 		<!-- <property name="Paper" ref="mathpaper" /> -->
 

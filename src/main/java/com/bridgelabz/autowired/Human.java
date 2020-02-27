@@ -15,7 +15,7 @@ public class Human {
 		this.heart = heart;
 		// Autowired Constructor
 	}
-//	@Autowired
+	@Autowired
 	public void setHeart(Heart heart) {// Setter Method
 		this.heart = heart;
 	}

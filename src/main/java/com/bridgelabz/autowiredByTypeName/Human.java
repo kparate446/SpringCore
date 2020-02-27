@@ -11,13 +11,14 @@ public class Human {
 	}
 //	@Autowired 
 	public Human(Heart heart) { // Construnctor
-		
+		System.out.println(heart);
 		this.heart = heart;
 		// Autowired Constructor
 	}
 	// 2 Object is created in bean same as the type/ id(name)
 	@Autowired
 	public void setHeart(Heart heart) {// Setter Method
+		System.out.println("set"+heart);
 		this.heart = heart;
 	}
 	public void startPumping(){

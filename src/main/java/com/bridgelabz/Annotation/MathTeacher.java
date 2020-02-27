@@ -1,5 +1,6 @@
 package com.bridgelabz.Annotation;
 
+
 public class MathTeacher implements Teacher {
 
 	@Override

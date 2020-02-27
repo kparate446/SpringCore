@@ -1,9 +1,6 @@
 package com.bridgelabz.beanLifeCycleAnnotation;
 
 import java.sql.SQLException;
-import java.util.Scanner;
-
-import org.apache.catalina.core.ApplicationContext;
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -26,6 +23,7 @@ public class MainClass {
 		 * 1)context.close() --> Exception is occur
 		 * 2) context.registerShutdownHook()--> working*/
 		Hello hello = context.getBean("hello",Hello.class);
+		context.close();
 		
 }
 }

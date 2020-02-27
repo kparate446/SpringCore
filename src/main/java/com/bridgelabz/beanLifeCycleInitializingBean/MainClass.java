@@ -1,9 +1,6 @@
 package com.bridgelabz.beanLifeCycleInitializingBean;
 
 import java.sql.SQLException;
-import java.util.Scanner;
-
-import org.apache.catalina.core.ApplicationContext;
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

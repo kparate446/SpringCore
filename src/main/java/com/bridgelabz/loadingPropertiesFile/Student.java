@@ -1,6 +1,5 @@
 package com.bridgelabz.loadingPropertiesFile;
 
-import org.springframework.beans.factory.annotation.Required;
 import org.springframework.beans.factory.annotation.Value;
 
 public class Student {
@@ -36,6 +35,6 @@ public class Student {
 		System.out.println("Student Intrested Course -"+intrestedCourse);
 		System.out.println("Student Hobby -"+hobby);
 	
-	}
+	}	
 	
 }

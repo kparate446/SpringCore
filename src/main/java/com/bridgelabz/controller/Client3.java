@@ -1,8 +1,6 @@
 package com.bridgelabz.controller;
 
-import org.apache.catalina.core.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-
 import com.bridgelabz.model.AnotherStudent3;
 import com.bridgelabz.model.Student3;
 // Spring Constructor Injection

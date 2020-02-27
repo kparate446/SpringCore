@@ -31,7 +31,7 @@ public class Human {
 	public void startPumping(){
 		if(heart !=null){
 			heart.pump();
-			System.out.println("Name of the "+heart.getNameOfAnimal()+"no of heart "+heart.getNoOfHeart());
+			System.out.println("Name of the "+heart.getNameOfAnimal()+" no of heart "+heart.getNoOfHeart());
 		}
 		else {
 			System.out.println("Dead");

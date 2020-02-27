@@ -1,8 +1,6 @@
 package com.bridgelabz.Annotation1;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.stereotype.Component;
-
 
 public class MainClass2 {
 	public static void main(String[] args) {

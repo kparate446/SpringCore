@@ -6,9 +6,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-import javax.annotation.PostConstruct;
-import javax.annotation.PreDestroy;
-
 public class StudentConnection {
 	private String driver;
 	private String url;

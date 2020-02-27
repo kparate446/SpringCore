@@ -1,6 +1,5 @@
 package com.bridgelabz.controller;
 
-import org.apache.catalina.core.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.bridgelabz.model.Student1;
@@ -18,5 +17,6 @@ public class Exam1 {
 	
 		Student1 ankit = context.getBean("ankit" , Student1.class);// Dependency Injection 
 		ankit.displayStudent();
+		context.close();
 	}
 }  

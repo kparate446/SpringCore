@@ -6,7 +6,6 @@ import com.bridgelabz.model.Student4;
 // Spring Loose Coupling
 public class Client4 {
 	public static void main(String[] args) {
-			
 		@SuppressWarnings("resource")
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("beans4.xml");
 		System.out.println("Xml file Loaded");

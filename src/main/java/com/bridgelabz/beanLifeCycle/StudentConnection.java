@@ -2,7 +2,6 @@ package com.bridgelabz.beanLifeCycle;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -11,12 +10,13 @@ import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
 public class StudentConnection {
+	
 	private String driver;
 	private String url;
 	private String userName;
 	private String password;
 	// My Connection Obj
-		Connection con;
+		Connection con=null;
 	// Access the value in Bean write setter method
 
 	public String getDriver() {
@@ -55,14 +55,14 @@ public class StudentConnection {
 	@PostConstruct 
 	public void init() throws ClassNotFoundException, SQLException {
 		System.out.println("Init Method call");
-		createStudentDBConnection();
+	 con=createStudentDBConnection();
 	}
 	
 //	@PostConstruct // Automatically connected
-	public void createStudentDBConnection() throws ClassNotFoundException, SQLException {
+	public Connection createStudentDBConnection() throws ClassNotFoundException, SQLException {
 		Class.forName(driver);
 		// get a connection
-		con = DriverManager.getConnection(url, userName, password);
+		return DriverManager.getConnection(url, userName, password);
 	}
 
 	public void selectAllRows() throws ClassNotFoundException, SQLException {
@@ -70,6 +70,7 @@ public class StudentConnection {
 		// Load Driver
 		/** It is used the connection @PostConstruct --> call Automatically*/
 		// execute Query
+		
 		Statement stmt = con.createStatement();
 		ResultSet rs = stmt.executeQuery("SELECT * FROM college.Student");
 		while (rs.next()) {
@@ -97,7 +98,7 @@ public class StudentConnection {
 	
 	public void closeConnection() throws SQLException {
 		// Cleaning up the Container
-		// All Connectuion are Closed
+		// All Connection are Closed
 		
 		con.close();
 	}

@@ -4,7 +4,7 @@ package com.bridgelabz.Annotation;
 public class College2 {
 	 private principal2 principal2;
 	 private Teacher teacher;
-	 
+	
 	 // Constructor Injection
 	/*
 	 * public College(principal2 principalBean) { 

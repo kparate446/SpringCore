@@ -7,7 +7,8 @@ public class MainClass {
 	ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("beans9.xml");
 
 	Student student = context.getBean("student",Student.class);
-
+	System.out.println("student"+student.toString());
 	student.displayStudentInfo();
+	context.close();
 }
 }

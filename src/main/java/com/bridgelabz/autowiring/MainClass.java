@@ -10,6 +10,7 @@ public class MainClass {
 
 	Human human = context.getBean("human",Human.class);
 	human.startPumping();
+	context.close();
 	
 }
 }
